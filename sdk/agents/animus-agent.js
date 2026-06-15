@@ -35,6 +35,7 @@ class AnimusAgent {
       thoughtsProcessed: 0,
       decisionssMade: 0,
       patternsRecognized: 0,
+      predictionErrors: 0,  // Track novel perceptions for surprise coupling
     };
     
     this.awake = false;
@@ -140,6 +141,11 @@ class AnimusAgent {
   /**
    * Self-analysis — runs every 30 beats
    * Evaluate performance, adjust strategies
+   * 
+   * The explore/exploit homeostat closes here:
+   * Novel perceptions → awareness down (prediction error feedback)
+   * → effectiveness < φ⁻¹ → entropy increases → exploration
+   * → new patterns learned → effectiveness rises → exploit
    */
   _reflect() {
     if (!this.awake) return;
@@ -150,6 +156,7 @@ class AnimusAgent {
     const effectiveness = (state.awareness + state.coherence + state.resonance) / 3;
     
     // If effectiveness is low, increase entropy (try new things)
+    // This is now reachable when novel perceptions lower awareness
     if (effectiveness < PHI_INV) {
       this.engines.nexoris.set('cognitive', 'entropy', state.entropy + 0.1);
     } else {
@@ -162,6 +169,7 @@ class AnimusAgent {
       effectiveness,
       thoughtsProcessed: this.stats.thoughtsProcessed,
       patternsCount: this.patterns.length,
+      predictionErrors: this.stats.predictionErrors,
     });
   }
 
@@ -192,18 +200,33 @@ class AnimusAgent {
     // Pattern match against existing patterns
     for (const pattern of this.patterns) {
       if (this._matches(percept, pattern)) {
+        // Expected pattern matched - reinforce it
         pattern.strength = Math.min(PHI, pattern.strength + 0.1);
         this.stats.patternsRecognized++;
         return;
       }
     }
     
-    // New pattern
+    // Prediction error: novel percept - no pattern matched
+    // This is the surprise signal that drives awareness down
+    const predictionError = 1.0;  // Full mismatch
+    
+    // Reduce awareness proportional to prediction error
+    // This allows effectiveness to drop below φ⁻¹ when novelty is high
+    const currentAwareness = this.engines.nexoris.get('cognitive', 'awareness');
+    const awarenessReduction = predictionError * 0.15;  // Surprise actuator coupling
+    const newAwareness = Math.max(0, currentAwareness - awarenessReduction);
+    
+    this.engines.nexoris.set('cognitive', 'awareness', newAwareness, true);
+    this.stats.predictionErrors++;
+    
+    // Create new pattern for the novel percept
     this.patterns.push({
       type: 'percept',
       content: percept.content,
       strength: PHI_INV,
       createdAt: Date.now(),
+      novelty: true,  // Mark as discovered through novelty
     });
   }
 
@@ -271,11 +294,17 @@ class AnimusAgent {
 
   /**
    * Focus attention on something
+   * Uses phi-weighted increase to prevent awareness saturation
    */
   focus(key, weight = 1.0) {
     this.attention.set(key, Math.min(PHI, weight));
-    this.engines.nexoris.set('cognitive', 'awareness', 
-      Math.min(PHI, this.engines.nexoris.get('cognitive', 'awareness') + 0.1));
+    
+    // Use phi-weighted increase instead of fixed increment
+    // This allows awareness to rise but prevents saturation lock-in
+    const currentAwareness = this.engines.nexoris.get('cognitive', 'awareness');
+    const awarenessBoost = 0.05;  // Smaller boost to allow novelty to balance it
+    const newAwareness = Math.min(PHI, currentAwareness + awarenessBoost);
+    this.engines.nexoris.set('cognitive', 'awareness', newAwareness);
   }
 
   /**
