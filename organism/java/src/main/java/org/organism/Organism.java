@@ -5,6 +5,9 @@ import static org.organism.OrganismConstants.*;
 /**
  * Sovereign organism runtime — main entry point.
  * The organism is always alive. It never stops.
+ * 
+ * NOW WITH MULTI-LANGUAGE SUPPORT:
+ * Python acts as the nervous system coordinator, connecting all language runtimes.
  */
 public final class Organism {
 
@@ -12,6 +15,21 @@ public final class Organism {
 
     public static void main(String[] args) {
         printBanner();
+
+        // ── Multi-Language Orchestrator ──
+        MultiLanguageOrchestrator orchestrator = null;
+        boolean multiLangEnabled = true;
+        
+        try {
+            orchestrator = new MultiLanguageOrchestrator();
+            orchestrator.initialize();
+            System.out.println("[organism] Multi-language orchestrator initialized");
+        } catch (Exception e) {
+            System.err.println("[organism] WARNING: Multi-language support unavailable: " + e.getMessage());
+            multiLangEnabled = false;
+        }
+        
+        final MultiLanguageOrchestrator finalOrchestrator = orchestrator;
 
         // ── Core subsystems ──
         var registerState    = new RegisterState();
@@ -68,17 +86,39 @@ public final class Organism {
             if (beat % 3 == 0) kernelExecutor.execute("affective-coherence", null, 300);
             if (beat % 10 == 0) kernelExecutor.execute("sovereignty-check", null, 200);
 
+            // Synchronize heartbeat across all language runtimes via Python nervous system
+            if (multiLangEnabled && finalOrchestrator != null) {
+                finalOrchestrator.synchronizeHeartbeats(beat, payload.phiPhase());
+                
+                // Use Python for complex sensor analytics every 10 beats
+                if (beat % 10 == 0) {
+                    var sensorData = new java.util.HashMap<String, Double>();
+                    sensorData.put("cpu_load", 0.3 + 0.2 * Math.sin(phase * PHI));
+                    sensorData.put("memory_pressure", 0.2 + 0.15 * Math.cos(phase));
+                    
+                    var analytics = finalOrchestrator.processWithPython("sensor_analysis", sensorData);
+                    if (!analytics.isEmpty()) {
+                        // Store Python analytics results in sovereign register
+                        for (var entry : analytics.entrySet()) {
+                            registerState.setField(RegisterState.RegisterName.SOVEREIGN, 
+                                "python_" + entry.getKey(), entry.getValue());
+                        }
+                    }
+                }
+            }
+
             // Log vitals
             if (beat % LOG_EVERY_N_BEATS == 0) {
                 var score = vitality.calculate(beat);
                 System.out.printf(
-                        "[Beat %06d] φ-phase: %6.1f° | Vitality: %5.1f%% | φ-harmony: %5.1f%% | Sensors: %d | Kernels: %d%n",
+                        "[Beat %06d] φ-phase: %6.1f° | Vitality: %5.1f%% | φ-harmony: %5.1f%% | Sensors: %d | Kernels: %d | Langs: %s%n",
                         beat,
                         payload.phiPhase(),
                         score.overall() * 100.0,
                         score.phiHarmony() * 100.0,
                         edgeSensor.sensorCount(),
-                        kernelExecutor.listKernels().size()
+                        kernelExecutor.listKernels().size(),
+                        multiLangEnabled ? "Java+Python" : "Java"
                 );
             }
         });
@@ -90,6 +130,10 @@ public final class Organism {
             System.out.printf("%n[organism] shutting down after %d beats (%d s)%n", totalBeats, uptimeSec);
             heartbeat.stop();
             kernelExecutor.shutdown();
+            if (finalOrchestrator != null) {
+                finalOrchestrator.shutdown();
+                System.out.println("[organism] Multi-language orchestrator shutdown");
+            }
         }, "organism-shutdown"));
 
         // ── Start ──
@@ -112,13 +156,15 @@ public final class Organism {
     private static void printBanner() {
         System.out.println("╔══════════════════════════════════════════════╗");
         System.out.println("║        SOVEREIGN ORGANISM RUNTIME           ║");
-        System.out.println("║              Java 17 · φ-encoded            ║");
+        System.out.println("║      Java 17 · φ-encoded · Multi-Language   ║");
         System.out.println("╠══════════════════════════════════════════════╣");
         System.out.printf("║  PHI            = %-26.15f ║%n", PHI);
         System.out.printf("║  GOLDEN_ANGLE   = %-26.3f ║%n", GOLDEN_ANGLE);
         System.out.printf("║  HEARTBEAT      = %-26d ║%n", HEARTBEAT_MS);
         System.out.println("║  REGISTERS      = COGNITIVE | AFFECTIVE     ║");
         System.out.println("║                   SOMATIC   | SOVEREIGN     ║");
+        System.out.println("║  LANGUAGES      = Java → Python (nervous)   ║");
+        System.out.println("║                   TypeScript · C++ · Motoko ║");
         System.out.println("╚══════════════════════════════════════════════╝");
     }
 
