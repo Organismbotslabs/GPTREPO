@@ -24,7 +24,7 @@
   "report": "docs/test-health-dashboard.md",
   "microbots": [],
   "fitness_score": 0.565,
-  "fitness_evaluated": "2026-06-15T19:03:37.463Z",
+  "fitness_evaluated": "2026-06-15T19:37:16.930Z",
   "capability_weights": {
     "test": 1.076,
     "report": 1.076,
