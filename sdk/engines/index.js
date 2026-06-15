@@ -7,6 +7,10 @@
  *   - QUANTUM_FLUX: Randomness & Entropy
  *   - COREOGRAPH: Orchestration
  * 
+ * PLUS Adaptive Learning Engines:
+ *   - COGNITIVE_LEARNING_ROUTER: Feedback → Embedding Updates
+ *   - ADAPTIVE_STATE_REGISTRY: Observable Learning Ledger
+ * 
  * These are the substrate on which all agents operate.
  */
 
@@ -14,6 +18,8 @@ export { ChronoEngine, chronoEngine, PHI, PHI_INV, HEARTBEAT_MS, GOLDEN_ANGLE } 
 export { NexorisEngine, nexorisEngine, REGISTERS, DIMENSIONS } from './nexoris-engine.js';
 export { QuantumFluxEngine, quantumFluxEngine } from './quantum-flux-engine.js';
 export { CoreographEngine, coreographEngine, PRIORITY } from './coreograph-engine.js';
+export { CognitiveLearningRouter } from './cognitive-learning-router.js';
+export { AdaptiveStateRegistry } from './adaptive-state-registry.js';
 
 // Re-export singletons as default engines
 export const CHRONO = chronoEngine;
@@ -37,5 +43,7 @@ export function createEngines() {
     nexoris: new NexorisEngine(),
     quantumFlux: new QuantumFluxEngine(),
     coreograph: new CoreographEngine(),
+    learningRouter: null,  // Will be created by agents that need it
+    stateRegistry: null,   // Will be created by agents that need it
   };
 }

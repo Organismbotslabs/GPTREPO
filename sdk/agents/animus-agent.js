@@ -4,11 +4,18 @@
  * The cognitive center of the organism. ANIMUS reasons, decides, and plans.
  * Uses CHRONO for timing, NEXORIS for state, QUANTUM_FLUX for creativity.
  * 
+ * NOW WITH ADAPTIVE LEARNING:
+ *   - CognitiveLearningRouter: Translates feedback outcomes into embedding updates
+ *   - AdaptiveStateRegistry: Observable ledger of learning and homeostat state
+ *   - Prediction-error feedback: Awareness down-driver on novel perceptions
+ * 
  * Responsibilities:
  *   - High-level reasoning and decision making
  *   - Goal prioritization and planning
  *   - Pattern recognition and synthesis
  *   - Attention routing
+ *   - Outcome recording and learning signal propagation
+ *   - Homeostat monitoring (explore/exploit)
  */
 
 const PHI = 1.618033988749895;
@@ -30,15 +37,65 @@ class AnimusAgent {
     this.dreamTimer = null;
     this.reflectTimer = null;
     
+    // ADAPTIVE LEARNING: Feedback loop and state tracking
+    this.learningRouter = null;  // Lazy-loaded
+    this.stateRegistry = null;   // Lazy-loaded
+    
     // Statistics
     this.stats = {
       thoughtsProcessed: 0,
       decisionssMade: 0,
       patternsRecognized: 0,
       predictionErrors: 0,  // Track novel perceptions for surprise coupling
+      outcomesRecorded: 0,  // Track learning feedback
     };
     
     this.awake = false;
+  }
+
+  /**
+   * Get or create learning router
+   */
+  _getLearningRouter() {
+    if (!this.learningRouter) {
+      // Dynamically import to avoid circular dependencies
+      try {
+        const CognitiveLearningRouter = require('./cognitive-learning-router.js');
+        const Router = CognitiveLearningRouter.default || CognitiveLearningRouter;
+        this.learningRouter = new Router(this.engines);
+      } catch (e) {
+        console.error('[ANIMUS] Failed to initialize CognitiveLearningRouter:', e.message);
+        // Return a no-op router if import fails
+        return { recordOutcome: () => ({ applied: false, reason: 'router_unavailable' }) };
+      }
+    }
+    return this.learningRouter;
+  }
+
+  /**
+   * Get or create adaptive state registry
+   */
+  _getStateRegistry() {
+    if (!this.stateRegistry) {
+      // Dynamically import to avoid circular dependencies
+      try {
+        const AdaptiveStateRegistry = require('./adaptive-state-registry.js');
+        const Registry = AdaptiveStateRegistry.default || AdaptiveStateRegistry;
+        this.stateRegistry = new Registry(this.engines);
+      } catch (e) {
+        console.error('[ANIMUS] Failed to initialize AdaptiveStateRegistry:', e.message);
+        // Return a no-op registry if import fails
+        return { 
+          recordEffectiveness: () => ({ effectiveness: 0, recordCount: 0 }),
+          getStateMetrics: () => ({ adaptiveScore: 0 }),
+          recordLearningEvent: () => ({ recorded: false }),
+          getAdaptiveIntelligenceReport: () => ({ summary: { isAdaptive: false } }),
+          getCompleteState: () => ({ minds: {} }),
+          updateMindActivation: () => ({ activation: 0 }),
+        };
+      }
+    }
+    return this.stateRegistry;
   }
 
   // ── Lifecycle ──────────────────────────────────────────────────────────
@@ -164,13 +221,20 @@ class AnimusAgent {
       this.engines.nexoris.set('cognitive', 'entropy', state.entropy * PHI_INV);
     }
     
-    // Emit reflection event
-    this.engines.coreograph.emit('ANIMUS:reflection', {
-      effectiveness,
-      thoughtsProcessed: this.stats.thoughtsProcessed,
-      patternsCount: this.patterns.length,
-      predictionErrors: this.stats.predictionErrors,
-    });
+   // ADAPTIVE LEARNING: Record effectiveness in the state registry
+   // This tracks homeostat oscillation for monitoring
+   const registry = this._getStateRegistry();
+   registry.recordEffectiveness(effectiveness);
+    
+   // Emit reflection event
+   this.engines.coreograph.emit('ANIMUS:reflection', {
+     effectiveness,
+     thoughtsProcessed: this.stats.thoughtsProcessed,
+     patternsCount: this.patterns.length,
+     predictionErrors: this.stats.predictionErrors,
+     outcomesRecorded: this.stats.outcomesRecorded,
+     adaptiveScore: registry.getStateMetrics().adaptiveScore,
+   });
   }
 
   // ── Cognitive Functions ────────────────────────────────────────────────
@@ -344,6 +408,75 @@ class AnimusAgent {
     );
     
     return { score: Math.max(0, Math.min(100, score)) };
+  }
+
+  /**
+   * Record an outcome for learning feedback
+   * Called by marketplace settlement or tool invoker when a tool execution completes
+   */
+  recordOutcome(outcomeData) {
+    const router = this._getLearningRouter();
+    const result = router.recordOutcome(outcomeData);
+    
+    if (result.applied) {
+      this.stats.outcomesRecorded++;
+      
+      // Wire learning signals to adaptive state registry
+      const registry = this._getStateRegistry();
+      for (const signal of (result.learningSignals || [])) {
+        registry.recordLearningEvent(
+          signal.mindName,
+          signal.learningRate,
+          result.outcomeSignal
+        );
+      }
+    }
+    
+    return result;
+  }
+
+  /**
+   * Get learning metrics
+   */
+  getLearningMetrics() {
+    const router = this._getLearningRouter();
+    return router.getMetrics();
+  }
+
+  /**
+   * Get adaptive state registry report
+   */
+  getAdaptiveIntelligenceReport() {
+    const registry = this._getStateRegistry();
+    return registry.getAdaptiveIntelligenceReport();
+  }
+
+  /**
+   * Get complete adaptive learning state
+   */
+  getAdaptiveState() {
+    const registry = this._getStateRegistry();
+    return registry.getCompleteState();
+  }
+
+  /**
+   * Track mind activation (called when a mind processes a thought)
+   */
+  trackMindActivation(mindName, activationLevel) {
+    const registry = this._getStateRegistry();
+    return registry.updateMindActivation(mindName, activationLevel);
+  }
+
+  /**
+   * Get all adaptive system state for monitoring
+   */
+  getFullAdaptiveState() {
+    return {
+      learning: this.getLearningMetrics(),
+      adaptive: this.getAdaptiveState(),
+      report: this.getAdaptiveIntelligenceReport(),
+      stats: { ...this.stats },
+    };
   }
 }
 
