@@ -10,12 +10,13 @@
     <packaging>jar</packaging>
 
     <name>Organism Runtime</name>
-    <description>Sovereign organism runtime with phi-encoded state architecture</description>
+    <description>Sovereign organism runtime with phi-encoded state architecture and multi-language support</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <python.version>3.10</python.version>
     </properties>
 
     <build>
@@ -40,6 +41,34 @@
                     <source>17</source>
                     <target>17</target>
                 </configuration>
+            </plugin>
+            <!-- Execute Python setup during build -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>install-python-organism</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>python3</executable>
+                            <workingDirectory>${project.basedir}/../python</workingDirectory>
+                            <arguments>
+                                <argument>-m</argument>
+                                <argument>pip</argument>
+                                <argument>install</argument>
+                                <argument>-e</argument>
+                                <argument>.</argument>
+                                <argument>--user</argument>
+                            </arguments>
+                            <skip>${skipPython}</skip>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

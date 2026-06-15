@@ -2,6 +2,8 @@
 
 A living, phi-encoded, 4-register organism with heartbeat, kernel execution,
 edge sensing, and cross-organism resonance.
+
+Now enhanced with multi-language support and nervous system coordination.
 """
 from __future__ import annotations
 
@@ -12,6 +14,7 @@ from .kernel import KernelExecutor, KernelStatus
 from .sensor import EdgeSensor, SensorType
 from .resonance import CrossOrganismResonance
 from .vitality import VitalityCalculator
+from .nervous_system import NervousSystemCoordinator, JavaBridge, get_coordinator
 
 __all__ = [
     "PHI",
@@ -26,4 +29,7 @@ __all__ = [
     "SensorType",
     "CrossOrganismResonance",
     "VitalityCalculator",
+    "NervousSystemCoordinator",
+    "JavaBridge",
+    "get_coordinator",
 ]
