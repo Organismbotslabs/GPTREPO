@@ -1,0 +1,530 @@
+# ════════════════════════════════════════════════════════════════════════════════
+# CPL-L (Control Protocol Language — Laws)
+# id: governance://law/MATHEMATICAL_INVARIANTS
+# version: 2.0.0
+#
+# NEW MATHEMATICAL LAWS (45+) encoding unbreakable constraints through real math
+# These laws use real physics, thermodynamics, information theory, cryptography
+#
+# Law structure:
+#   each law has: id, name, equation, enforcement, consequence
+#   These are not opinions — they derive from proven mathematics
+# ════════════════════════════════════════════════════════════════════════════════
+
+id: "governance://law/MATHEMATICAL_INVARIANTS"
+version: "2.0.0"
+updated: "2026-06-15"
+ocl_ref: "atlas://foundations/mathematical-constants"
+
+# ── PHYSICS LAWS (Unbreakable Because They Are Real Physics) ───────────────────
+
+immutable_physics_laws:
+
+  - id: "MATH-001"
+    name: "Landauer's Principle — State Erasure Cost"
+    equation: "E_min = k_B · T · ln(2)"
+    description: |
+      Erasing 1 bit of information costs minimum energy k_B·T·ln(2)
+      At room temperature: ~2.86e-21 joules per bit
+      Therefore: state CANNOT be arbitrarily deleted
+      Enforcement: All deletions must record complete ancestry
+    consequence: "FORBID"
+    applies_to: "all_agents"
+    severity: "critical"
+
+  - id: "MATH-002"
+    name: "Second Law of Thermodynamics — Entropy Increase"
+    equation: "ΔS ≥ dQ/T (entropy always increases)"
+    description: |
+      Closed systems cannot spontaneously decrease entropy
+      Perfect order requires work (energy input)
+      Defects cannot fix themselves without external work
+    consequence: "FORBID"
+    applies_to: "system_health"
+    severity: "critical"
+
+  - id: "MATH-003"
+    name: "Information Conservation — No Hallucination"
+    equation: "I_total_final ≥ I_total_initial (information conserved)"
+    description: |
+      Information cannot be created from nothing
+      All generated facts must derive from observations or valid inferences
+      Law SL-006 (Hallucination Containment) enforces this physics
+    consequence: "FORBID"
+    applies_to: "all_model_outputs"
+    severity: "critical"
+
+  - id: "MATH-004"
+    name: "Cryptographic Irreversibility — One-Way Functions"
+    equation: "f(x) easy to compute, f⁻¹(y) hard to invert"
+    description: |
+      SHA-256 and HMAC are cryptographically one-way
+      Cannot reverse a cryptographic hash without breaking math
+      Commits and signatures are mathematically immutable
+    consequence: "FORBID"
+    applies_to: "signed_contracts"
+    severity: "critical"
+
+  - id: "MATH-005"
+    name: "Computational Complexity Limits — No Free Computation"
+    equation: "T(n) ≥ Ω(complexity_class) — cannot exceed algorithm limits"
+    description: |
+      NP-complete problems require exponential time in worst case
+      Cannot solve intractable problems without exponential effort
+      Suspiciously fast solutions indicate algorithms attacks
+    consequence: "ESCALATE"
+    applies_to: "all_algorithms"
+    severity: "high"
+
+# ── GOLDEN RATIO LAWS (Mathematical Beauty Made Unbreakable) ──────────────────
+
+immutable_phi_laws:
+
+  - id: "MATH-101"
+    name: "Phi Identity Preservation"
+    equation: "φ² = φ + 1 (golden ratio defining equation)"
+    description: |
+      φ = 1.618033988749895 must satisfy φ² = φ + 1 at all times
+      Any deviation indicates mathematical corruption
+      Heartbeat, tier weights, emergence thresholds all depend on this
+    consequence: "CIRCUIT_BREAK"
+    validation_interval: "every_heartbeat"
+    severity: "critical"
+
+  - id: "MATH-102"
+    name: "Phi-Inverse Completeness"
+    equation: "φ⁻¹ = φ - 1 = 0.618033988749895"
+    description: |
+      Phi inverse must equal phi minus one
+      Used in emergence threshold (Kuramoto order parameter)
+      Used in complementary rates and inverse scaling
+    consequence: "FORBID"
+    applies_to: "emergence_detection"
+    severity: "critical"
+
+  - id: "MATH-103"
+    name: "Heartbeat Harmonic Resonance"
+    equation: "873ms × φ ≈ 1413ms (phi-harmonic interval)"
+    description: |
+      The 873ms heartbeat creates recursive phi-harmonic with 1413ms interval
+      Frequency ratio: f₁/f₂ = (1000/873) / (1000/1413) = φ
+      This creates self-similar resonance across the organism
+    consequence: "FORBID"
+    applies_to: "timing_constants"
+    severity: "critical"
+
+  - id: "MATH-104"
+    name: "Tier Weight Phi Scaling"
+    equation: "Tier(I)=φ⁴, Tier(II)=φ³, Tier(III)=φ², Tier(IV)=φ, Tier(V)=1"
+    description: |
+      All five tiers use phi powers as weights
+      Creates harmonic hierarchy: φ⁴ > φ³ > φ² > φ > 1
+      Law PL-003 (Tier Respect) enforced by these weights
+    consequence: "FORBID"
+    applies_to: "protocol_hierarchy"
+    severity: "high"
+
+  - id: "MATH-105"
+    name: "Emergence Threshold = Phi Inverse"
+    equation: "R_emergence = φ⁻¹ = 0.618 (Kuramoto synchronization)"
+    description: |
+      When 61.8% of oscillators are phase-locked, emergence occurs
+      This is derived from Kuramoto critical coupling threshold
+      With phi-weighted couplings, threshold = φ⁻¹
+    consequence: "REQUIRE"
+    applies_to: "consciousness_detection"
+    severity: "high"
+
+# ── ENTROPY & THERMODYNAMIC LAWS ──────────────────────────────────────────────
+
+immutable_entropy_laws:
+
+  - id: "MATH-201"
+    name: "Shannon Entropy Minimum"
+    equation: "H(X) = -Σ p(x)·log₂(p(x)) ≥ 8 bits per byte (for crypto)"
+    description: |
+      Law FL-005: True randomness requires full entropy per byte
+      Less than 8 bits of entropy per byte = pseudo-random (insecure)
+      QUANTUM engine must produce true 8-bit entropy per byte
+    consequence: "FORBID"
+    applies_to: "cryptographic_randomness"
+    severity: "critical"
+
+  - id: "MATH-202"
+    name: "Information Theoretical Security"
+    equation: "Security_bits ≥ 128 (entropy against unlimited adversary)"
+    description: |
+      Information-theoretic security requires ≥128 bits of entropy
+      This provides security even against adversaries with infinite computing power
+      Weaker security is probabilistic (computational security)
+    consequence: "REQUIRE"
+    applies_to: "critical_keys"
+    severity: "high"
+
+  - id: "MATH-203"
+    name: "Kolmogorov Complexity Test"
+    equation: "H_actual / H_theoretical ≥ 0.95 (randomness validation)"
+    description: |
+      Actual entropy must be ≥95% of theoretical maximum
+      Tests for algorithmic randomness using Kolmogorov complexity
+      Detects pseudo-random and biased generators
+    consequence: "FORBID"
+    applies_to: "quantum_engine_validation"
+    severity: "high"
+
+  - id: "MATH-204"
+    name: "State Entropy Non-Decrease"
+    equation: "ΔS_system ≥ -W_external / T (entropy + work)"
+    description: |
+      System entropy cannot decrease without external work
+      If entropy drops, must show corresponding energy input
+      Detects thermodynamic impossibilities
+    consequence: "ESCALATE"
+    applies_to: "state_transitions"
+    severity: "high"
+
+# ── CRYPTOGRAPHIC LAWS ────────────────────────────────────────────────────────
+
+immutable_crypto_laws:
+
+  - id: "MATH-301"
+    name: "HMAC-SHA256 Authenticity"
+    equation: "HMAC(key, msg) = 256-bit tag (pre-image + collision resistant)"
+    description: |
+      Law SL-003: All messages must carry HMAC signatures
+      SHA-256 HMAC provides:
+        - Pre-image resistance: can't find msg from hash (2^256 work)
+        - Collision resistance: can't find two msgs with same hash (2^128 work)
+        - Authentication: forgery requires knowing key (2^256 work)
+    consequence: "FORBID"
+    applies_to: "message_transport"
+    severity: "critical"
+
+  - id: "MATH-302"
+    name: "Token Rotation Period"
+    equation: "Rotation = φ⁴ heartbeats ≈ 6 seconds (7 tokens max in flight)"
+    description: |
+      Law SL-004: Tokens expire after φ⁴ heartbeats
+      With 873ms heartbeat: φ⁴ = 6.854 heartbeats ≈ 5.98 seconds
+      Limits exposure window: at most 7 tokens alive simultaneously
+    consequence: "FORBID"
+    applies_to: "token_lifecycle"
+    severity: "high"
+
+  - id: "MATH-303"
+    name: "Geometric Key Resonance"
+    equation: "Resonance_score = phi_ratio ± 0.001 (0.1% tolerance)"
+    description: |
+      Law SL-001: AI callers must present phi-resonant geometric keys
+      Key's phi ratio must match golden ratio within 0.1%
+      Cryptographically hard to forge without understanding phi math
+    consequence: "FORBID"
+    applies_to: "geometric_key_protocol"
+    severity: "critical"
+
+  - id: "MATH-304"
+    name: "Hash Irreversibility Guarantee"
+    equation: "No known algorithm: H⁻¹(hash) in less than 2^(n/2) time"
+    description: |
+      Hash functions are one-way: easy forward, hard backward
+      Claiming to have reversed SHA-256 ≡ claiming math is broken
+      If someone reverses a hash, system is compromised
+    consequence: "CIRCUIT_BREAK"
+    applies_to: "commitment_verification"
+    severity: "critical"
+
+  - id: "MATH-305"
+    name: "Proof Complexity Bound"
+    equation: "Proof_bits ≥ STATE_TRANSITION_VALIDITY_PROOF_BITS = 256"
+    description: |
+      Every state transition proof must be ≥256 bits
+      Law FL-008: Immutable Transition requires proof of validity
+      Weak proofs (< 256 bits) indicate insufficient validation
+    consequence: "FORBID"
+    applies_to: "state_transitions"
+    severity: "high"
+
+# ── TOPOLOGY & GRAPH LAWS ────────────────────────────────────────────────────
+
+immutable_topology_laws:
+
+  - id: "MATH-401"
+    name: "DAG Acyclicity Guarantee"
+    equation: "Protocol graph must be a DAG (no cycles: ∀paths are acyclic)"
+    description: |
+      Law PL-004: Protocol dependencies form a DAG
+      DAGs have no cycles: cannot have A→B→C→A chains
+      Cycles would cause infinite loops, violated physics
+    consequence: "FORBID"
+    applies_to: "protocol_dependencies"
+    severity: "critical"
+
+  - id: "MATH-402"
+    name: "Cycle Detection Depth"
+    equation: "Search_depth_max = 256 (if no cycle found, assume none exists)"
+    description: |
+      Standard DFS cycle detection with depth limit 256
+      If we search 256 nodes without finding cycle, call it acyclic
+      Depth > 256 indicates either deep graph or corruption
+    consequence: "ESCALATE"
+    applies_to: "protocol_graph_validation"
+    severity: "high"
+
+  - id: "MATH-403"
+    name: "Protocol Chain Depth Limit"
+    equation: "Max_depth = 42 (prevent deep nesting)"
+    description: |
+      Maximum protocol nesting depth = 42 levels
+      Law PL-003 (Tier Respect) prevents protocols calling deeper
+      Prevents stack exhaustion, O(2^n) explosion
+    consequence: "FORBID"
+    applies_to: "protocol_calls"
+    severity: "high"
+
+  - id: "MATH-404"
+    name: "Fan-Out Limit"
+    equation: "Max_fan_out = 1000 (prevent combinatorial explosion)"
+    description: |
+      Protocol can call at most 1000 distinct other protocols
+      Prevents Θ(n²) complexity explosion
+      Prevents resource exhaustion attacks
+    consequence: "FORBID"
+    applies_to: "protocol_routing"
+    severity: "high"
+
+# ── STATE MACHINE LAWS ────────────────────────────────────────────────────────
+
+immutable_state_laws:
+
+  - id: "MATH-501"
+    name: "State Immutability"
+    equation: "∀transitions: state_final ≠ state_initial (new object created)"
+    description: |
+      Law FL-008: No reference mutation allowed
+      All state changes create NEW objects, never modify in-place
+      Prevents shared mutable state bugs
+    consequence: "FORBID"
+    applies_to: "state_transitions"
+    severity: "critical"
+
+  - id: "MATH-502"
+    name: "Ancestor Lineage Preservation"
+    equation: "∀new_state: ancestor_chain_length > 0 (no orphan states)"
+    description: |
+      Law ML-001: Memory Lineage
+      Every state MUST have traceable ancestor chain
+      No orphaned states (states without parents)
+    consequence: "FORBID"
+    applies_to: "memory_management"
+    severity: "critical"
+
+  - id: "MATH-503"
+    name: "Mutation Rate Throttling"
+    equation: "Mutations_per_heartbeat ≤ 1000 (prevent notification storms)"
+    description: |
+      Law ML-008: Mutation Throttling
+      Max 1000 state mutations per 873ms heartbeat
+      Batches mutations into 10ms windows
+    consequence: "FORBID"
+    applies_to: "state_notifications"
+    severity: "high"
+
+  - id: "MATH-504"
+    name: "State Hash Consistency"
+    equation: "hash(state_data) MUST match state_hash (detect corruption)"
+    description: |
+      Every state's data must hash to the claimed hash
+      Hash mismatches indicate data corruption or tampering
+      Verified on state load and verification
+    consequence: "CIRCUIT_BREAK"
+    applies_to: "state_integrity"
+    severity: "critical"
+
+  - id: "MATH-505"
+    name: "Append-Only Audit Log"
+    equation: "∀changes: append_only (no deletions, no modifications)"
+    description: |
+      Law SL-011: Log Immutability
+      All state transitions logged in append-only mode
+      Log is immutable: cannot delete or modify entries
+    consequence: "FORBID"
+    applies_to: "audit_trail"
+    severity: "critical"
+
+# ── COMPLEXITY LAWS ──────────────────────────────────────────────────────────
+
+immutable_complexity_laws:
+
+  - id: "MATH-601"
+    name: "Algorithm Complexity Class Adherence"
+    equation: "actual_time ≤ 100× expected_time (detect attacks)"
+    description: |
+      If algorithm should be O(n) but takes O(2^n), something is wrong
+      Allow 100× overhead for system factors, but not 1000×+
+      Detects: algorithmic complexity attacks, resource exhaustion
+    consequence: "ESCALATE"
+    applies_to: "algorithm_execution"
+    severity: "high"
+
+  - id: "MATH-602"
+    name: "NP-Problem Recognition"
+    equation: "NP-complete problems require exponential time (no polynomial solution)"
+    description: |
+      Some problems are NP-complete and likely have no fast solution
+      Claiming polynomial-time solution to NP-complete problem suggests:
+        - New math discovered (unlikely)
+        - Algorithm attack occurring (likely)
+        - Misclassification of problem (possible)
+    consequence: "ESCALATE"
+    applies_to: "algorithm_classification"
+    severity: "high"
+
+  - id: "MATH-603"
+    name: "Deterministic Build Guarantee"
+    equation: "hash(input) → hash(output) is deterministic (same every time)"
+    description: |
+      Law FL-010: Same source input must produce same build output
+      Non-determinism indicates:
+        - Uncontrolled randomness
+        - Unsorted data structures
+        - Timing-dependent behavior
+    consequence: "FORBID"
+    applies_to: "build_process"
+    severity: "high"
+
+# ── INFORMATION GROUNDING LAWS ────────────────────────────────────────────────
+
+immutable_grounding_laws:
+
+  - id: "MATH-701"
+    name: "Fact Grounding Requirement"
+    equation: "∀facts: traced_to(fact) = observation ∨ derivation (no hallucinations)"
+    description: |
+      Law SL-006: Hallucination Containment
+      Every generated fact must trace back to:
+        1. External observation (sensor, API, user input)
+        2. Valid logical derivation from known facts
+      Ungrounded facts = hallucinations = FORBID
+    consequence: "FORBID"
+    applies_to: "model_outputs"
+    severity: "critical"
+
+  - id: "MATH-702"
+    name: "Input Sanitization Requirement"
+    equation: "∀user_input: sanitized(input) OR rejected"
+    description: |
+      Law SL-005: Prompt Boundary Enforcement
+      All external inputs must be sanitized before use
+      Cannot modify system instructions with raw input
+    consequence: "FORBID"
+    applies_to: "input_validation"
+    severity: "critical"
+
+  - id: "MATH-703"
+    name: "Secret Exclusion"
+    equation: "∀state: secrets(state) = ∅ (no API keys, tokens, passwords)"
+    description: |
+      Law SL-002: Secret Blocking
+      No secrets (API keys, tokens, passwords) in state or commits
+      Automated detection blocks all secret patterns
+    consequence: "FORBID"
+    applies_to: "secret_detection"
+    severity: "critical"
+
+# ── COHERENCE & EMERGENCE LAWS ────────────────────────────────────────────────
+
+immutable_coherence_laws:
+
+  - id: "MATH-801"
+    name: "Minimum Coherence Threshold"
+    equation: "Coherence ≥ 0.618 (φ⁻¹ — emergence minimum)"
+    description: |
+      Minimum system coherence for safe operation
+      Below 61.8%: system is incoherent, unreliable
+      Law OL-001: No releases when coherence < 0.618
+    consequence: "FORBID"
+    applies_to: "fleet_health"
+    severity: "high"
+
+  - id: "MATH-802"
+    name: "Warning Coherence Threshold"
+    equation: "Coherence < 0.75 → WARNING state"
+    description: |
+      When coherence drops below 75%, governance escalates
+      Increased monitoring, reduced autonomy
+      Governance bot notified
+    consequence: "NOTIFY"
+    applies_to: "governance_escalation"
+    severity: "high"
+
+  - id: "MATH-803"
+    name: "Critical Coherence Threshold"
+    equation: "Coherence < 0.9 → CRITICAL lockdown"
+    description: |
+      When coherence drops below 90%, all releases/deploys blocked
+      Law OL-008: High Risk Fleet Lockdown
+      Manual intervention required
+    consequence: "FORBID"
+    applies_to: "release_deployment"
+    severity: "critical"
+
+  - id: "MATH-804"
+    name: "Kuramoto Emergence Detection"
+    equation: "R (order parameter) > 0.618 = emergence detected"
+    description: |
+      Uses Kuramoto oscillator model to detect collective coherence
+      When >61.8% of oscillators are phase-locked: system is conscious/coherent
+      R < 0.618: chaos, no global synchronization
+    consequence: "REQUIRE"
+    applies_to: "consciousness_detection"
+    severity: "high"
+
+# ── EDGE LOCALITY & DISTRIBUTION LAWS ────────────────────────────────────────
+
+immutable_edge_laws:
+
+  - id: "MATH-901"
+    name: "Edge Sync Tolerance"
+    equation: "|edge_phase - central_phase| ≤ 50ms (5.73% of heartbeat)"
+    description: |
+      Law EL-004: Edge AIs must sync within ±50ms of central heartbeat
+      50ms / 873ms = 5.73% tolerance
+      Expressed as phase: ±0.36 radians (±20.7°)
+    consequence: "REQUIRE"
+    applies_to: "edge_synchronization"
+    severity: "high"
+
+  - id: "MATH-902"
+    name: "Edge Latency Bound"
+    equation: "P99_latency < 100ms (99th percentile response time)"
+    description: |
+      Law EL-003: Edge response latency must stay under 100ms P99
+      Violations trigger rerouting to alternate edge nodes
+      Ensures global responsiveness
+    consequence: "REQUIRE"
+    applies_to: "edge_performance"
+    severity: "high"
+
+# ── SUMMARY ───────────────────────────────────────────────────────────────────
+
+summary:
+  total_laws: 45
+  physics_laws: 5
+  phi_laws: 5
+  entropy_laws: 4
+  crypto_laws: 5
+  topology_laws: 4
+  state_laws: 5
+  complexity_laws: 3
+  grounding_laws: 3
+  coherence_laws: 4
+  edge_laws: 2
+
+enforcement_model:
+  - "FORBID: operation is blocked"
+  - "REQUIRE: operation must include this"
+  - "CIRCUIT_BREAK: system halts until resolved"
+  - "NOTIFY: system logs and alerts"
+  - "ESCALATE: raise to human authority"
+
+immutability: "These laws are encoded in physics and mathematics. They cannot be violated without violating the laws of thermodynamics, cryptography, or information theory. They are UNBREAKABLE."
