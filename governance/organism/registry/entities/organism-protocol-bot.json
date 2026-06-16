@@ -25,7 +25,7 @@
   "report": "docs/protocol-lint-report.md",
   "microbots": [],
   "fitness_score": 0.594,
-  "fitness_evaluated": "2026-06-16T11:09:04.032Z",
+  "fitness_evaluated": "2026-06-16T16:49:17.245Z",
   "capability_weights": {
     "lint": 1.092,
     "graph": 1.092,
