@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-18T08:46:34.333Z",
+  "timestamp": "2026-06-19T09:06:03.325Z",
   "total": 294,
   "changed": 7,
   "new": 0,
@@ -441,10 +441,8 @@
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-tablet.png",
-      "status": "changed",
-      "message": "Size delta: -3 bytes",
-      "baselineSize": 39996,
-      "currentSize": 39993
+      "status": "unchanged",
+      "message": "Pixel-perfect match"
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel.png",
@@ -1468,9 +1466,9 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: +59 bytes",
+      "message": "Size delta: +16 bytes",
       "baselineSize": 905171,
-      "currentSize": 905230
+      "currentSize": 905187
     },
     {
       "file": "index-mobile.png",
@@ -1481,8 +1479,10 @@
     },
     {
       "file": "index-tablet.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: +108 bytes",
+      "baselineSize": 909810,
+      "currentSize": 909918
     },
     {
       "file": "index.png",
