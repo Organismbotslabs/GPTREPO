@@ -23,10 +23,10 @@
   "workflow": ".github/workflows/organism-commit-bot.yml",
   "report": "docs/commit-report.md",
   "generation": 1,
-  "fitness_score": 0.567,
+  "fitness_score": 0.552,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-06-23T14:45:40.882Z",
+  "fitness_evaluated": "2026-06-23T17:17:09.722Z",
   "capability_weights": {
     "commit": 1.13,
     "classify": 1.13,
