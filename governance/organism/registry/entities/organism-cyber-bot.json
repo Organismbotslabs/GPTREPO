@@ -35,8 +35,8 @@
     "threat-scanner",
     "surface-mapper"
   ],
-  "fitness_score": 0.58,
-  "fitness_evaluated": "2026-06-26T22:12:34.418Z",
+  "fitness_score": 0.587,
+  "fitness_evaluated": "2026-06-27T02:55:48.653Z",
   "capability_weights": {
     "threat_scan": 1.127,
     "surface_map": 1.127,
