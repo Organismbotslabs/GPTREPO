@@ -32,8 +32,8 @@
     "worker-health",
     "edge-latency"
   ],
-  "fitness_score": 0.609,
-  "fitness_evaluated": "2026-06-28T02:05:33.252Z",
+  "fitness_score": 0.602,
+  "fitness_evaluated": "2026-06-28T03:38:31.051Z",
   "capability_weights": {
     "deploy_edge": 1.169,
     "manifest_gen": 1.169,
