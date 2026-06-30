@@ -24,8 +24,8 @@
   "workflow": ".github/workflows/organism-neural-bot.yml",
   "report": "docs/neural-graph-report.md",
   "microbots": [],
-  "fitness_score": 0.561,
-  "fitness_evaluated": "2026-06-30T17:06:53.233Z",
+  "fitness_score": 0.593,
+  "fitness_evaluated": "2026-06-30T19:54:30.607Z",
   "capability_weights": {
     "validate": 1.129,
     "graph": 1.129,
