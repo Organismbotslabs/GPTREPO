@@ -2,177 +2,177 @@
   "bots": {
     "organism-alpha-bot": {
       "blocked": 0,
-      "allowed": 286,
-      "escalated": 285,
-      "rules_triggered": 570
+      "allowed": 287,
+      "escalated": 286,
+      "rules_triggered": 572
     },
     "organism-build-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-cloud-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-crawler-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-cyber-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
-      "rules_triggered": 285
+      "rules_triggered": 286
     },
     "organism-deploy-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-deps-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-docs-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-economy-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-governance-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-intel-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-learning-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-neural-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-protocol-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-release-bot": {
       "blocked": 1,
-      "allowed": 287,
+      "allowed": 288,
       "escalated": 0,
       "rules_triggered": 3
     },
     "organism-runtime-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-sandcastle-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-sdk-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-sentinel-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 1,
       "rules_triggered": 3
     },
     "organism-test-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-visual-bot": {
       "blocked": 0,
-      "allowed": 286,
+      "allowed": 287,
       "escalated": 0,
       "rules_triggered": 0
     },
     "atlas://protocol/geometry-lock": {
       "blocked": 0,
-      "allowed": 282,
+      "allowed": 283,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-commit-bot": {
       "blocked": 0,
-      "allowed": 208,
+      "allowed": 209,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-coordinator-bot": {
       "blocked": 0,
-      "allowed": 208,
+      "allowed": 209,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-evolution-bot": {
       "blocked": 0,
-      "allowed": 208,
+      "allowed": 209,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-genesis-bot": {
       "blocked": 0,
-      "allowed": 208,
+      "allowed": 209,
       "escalated": 0,
       "rules_triggered": 0
     },
     "organism-issue-bot": {
       "blocked": 0,
-      "allowed": 208,
+      "allowed": 209,
       "escalated": 0,
       "rules_triggered": 0
     }
   },
   "rules": {
     "WARN_HIGH_THREAT_SCORE": {
-      "triggered": 286,
+      "triggered": 287,
       "entities": [
         "organism-sentinel-bot",
         "organism-cyber-bot"
       ]
     },
     "ESCALATE_MULTIPLE_BOT_FAILURES": {
-      "triggered": 572,
+      "triggered": 574,
       "entities": [
         "organism-sentinel-bot",
         "organism-alpha-bot"
@@ -191,143 +191,8 @@
       ]
     }
   },
-  "cycles": 7330,
+  "cycles": 7357,
   "fleet_health": [
-    {
-      "ts": 1782770846022,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846023,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846024,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846025,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846025,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846026,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846027,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846028,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846029,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846030,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846030,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846031,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846032,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846033,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846034,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846034,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846036,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846037,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782770846037,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228244,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228246,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228247,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228247,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228248,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228248,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228249,
-      "status": "green",
-      "risk": 0.1424
-    },
-    {
-      "ts": 1782790228249,
-      "status": "green",
-      "risk": 0.1424
-    },
     {
       "ts": 1782790228250,
       "status": "green",
@@ -692,7 +557,142 @@
       "ts": 1782828879867,
       "status": "green",
       "risk": 0.1424
+    },
+    {
+      "ts": 1782839146936,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146937,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146938,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146939,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146940,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146940,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146940,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146941,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146942,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146942,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146943,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146943,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146943,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146944,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146945,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146945,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146945,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146946,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146946,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146947,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146947,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146948,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146948,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146949,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146949,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146950,
+      "status": "green",
+      "risk": 0.1424
+    },
+    {
+      "ts": 1782839146950,
+      "status": "green",
+      "risk": 0.1424
     }
   ],
-  "last_cycle_at": "2026-06-30T14:14:39.867Z"
+  "last_cycle_at": "2026-06-30T17:05:46.950Z"
 }
