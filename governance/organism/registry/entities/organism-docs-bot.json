@@ -24,8 +24,8 @@
   "workflow": ".github/workflows/organism-docs-bot.yml",
   "report": "docs/architecture-map.md",
   "microbots": [],
-  "fitness_score": 0.603,
-  "fitness_evaluated": "2026-07-01T17:13:52.425Z",
+  "fitness_score": 0.544,
+  "fitness_evaluated": "2026-07-01T19:52:52.689Z",
   "capability_weights": {
     "generate_docs": 1.124,
     "catalog": 1.124,
