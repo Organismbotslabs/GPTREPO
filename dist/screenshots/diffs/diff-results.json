@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-06-29T08:59:00.349Z",
+  "timestamp": "2026-07-01T08:12:27.629Z",
   "total": 294,
-  "changed": 4,
+  "changed": 6,
   "new": 0,
   "missing": 0,
   "details": [
@@ -427,8 +427,10 @@
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-desktop.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: 0 bytes",
+      "baselineSize": 51458,
+      "currentSize": 51458
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-mobile.png",
@@ -1124,8 +1126,10 @@
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-desktop.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: -3 bytes",
+      "baselineSize": 81335,
+      "currentSize": 81332
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-mobile.png",
@@ -1460,23 +1464,23 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: +110 bytes",
+      "message": "Size delta: +88 bytes",
       "baselineSize": 905171,
-      "currentSize": 905281
+      "currentSize": 905259
     },
     {
       "file": "index-mobile.png",
       "status": "changed",
-      "message": "Size delta: -48 bytes",
+      "message": "Size delta: +70 bytes",
       "baselineSize": 948412,
-      "currentSize": 948364
+      "currentSize": 948482
     },
     {
       "file": "index-tablet.png",
       "status": "changed",
-      "message": "Size delta: +21 bytes",
+      "message": "Size delta: -12 bytes",
       "baselineSize": 909810,
-      "currentSize": 909831
+      "currentSize": 909798
     },
     {
       "file": "index.png",
