@@ -28,7 +28,7 @@
   "fitness_score": 0.58,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-07-03T11:32:07.387Z",
+  "fitness_evaluated": "2026-07-03T14:00:09.969Z",
   "capability_weights": {
     "evaluate": 1.184,
     "hebbian_update": 1.184,
