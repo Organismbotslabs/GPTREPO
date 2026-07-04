@@ -28,8 +28,8 @@
   "workflow": ".github/workflows/organism-economy-bot.yml",
   "report": "docs/economy-dashboard.md",
   "microbots": [],
-  "fitness_score": 0.542,
-  "fitness_evaluated": "2026-07-04T16:00:58.831Z",
+  "fitness_score": 0.564,
+  "fitness_evaluated": "2026-07-04T19:09:46.804Z",
   "capability_weights": {
     "marketplace_analytics": 1.134,
     "sdk_tracking": 1.134,
