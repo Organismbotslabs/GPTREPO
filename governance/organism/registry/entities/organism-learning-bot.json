@@ -38,7 +38,7 @@
     "weight-evolver"
   ],
   "fitness_score": 0.599,
-  "fitness_evaluated": "2026-07-05T06:39:59.703Z",
+  "fitness_evaluated": "2026-07-05T11:03:30.563Z",
   "capability_weights": {
     "gather_signals": 1.215,
     "train_synapses": 1.215,
