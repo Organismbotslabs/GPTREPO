@@ -26,7 +26,7 @@
   "report": "docs/sandcastle-report.md",
   "microbots": [],
   "fitness_score": 0.567,
-  "fitness_evaluated": "2026-07-09T14:56:34.508Z",
+  "fitness_evaluated": "2026-07-09T17:22:55.976Z",
   "capability_weights": {
     "build": 1.188,
     "test": 1.188,
