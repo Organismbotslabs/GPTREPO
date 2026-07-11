@@ -30,7 +30,7 @@
   "report": "docs/security-report.md",
   "microbots": [],
   "fitness_score": 0.571,
-  "fitness_evaluated": "2026-07-10T22:00:41.884Z",
+  "fitness_evaluated": "2026-07-11T02:30:46.256Z",
   "capability_weights": {
     "security_audit": 1.189,
     "csp_check": 1.189,
