@@ -25,7 +25,7 @@
   "report": "docs/architecture-map.md",
   "microbots": [],
   "fitness_score": 0.555,
-  "fitness_evaluated": "2026-07-12T10:26:50.058Z",
+  "fitness_evaluated": "2026-07-12T13:16:00.182Z",
   "capability_weights": {
     "generate_docs": 1.183,
     "catalog": 1.183,
