@@ -26,7 +26,7 @@
   "report": "docs/fleet-report.md",
   "microbots": [],
   "fitness_score": 0.578,
-  "fitness_evaluated": "2026-07-14T13:39:45.942Z",
+  "fitness_evaluated": "2026-07-14T16:13:25.866Z",
   "capability_weights": {
     "orchestrate": 1.265,
     "census": 1.265,
