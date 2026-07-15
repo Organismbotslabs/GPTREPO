@@ -61,8 +61,8 @@
   "sdk": "sdk/geometry-lock/",
   "report": "docs/geometry-lock-report.md",
   "microbots": [],
-  "fitness_score": 0.679,
-  "fitness_evaluated": "2026-07-15T08:07:16.620Z",
+  "fitness_score": 0.653,
+  "fitness_evaluated": "2026-07-15T10:48:10.373Z",
   "capability_weights": {
     "geometric_key_generation": 1.386,
     "phase_resonance_validation": 1.386,
