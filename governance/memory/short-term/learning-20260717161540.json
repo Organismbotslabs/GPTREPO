@@ -1,0 +1,12 @@
+{
+  "type": "workflow_observation",
+  "workflow": "🔄 AUTO Orchestrator",
+  "conclusion": "failure",
+  "run_id": "29595428098",
+  "timestamp": "2026-07-17T16:15:40Z",
+  "success": false,
+  "insights": {
+    "pattern": "workflow_failure",
+    "fitness_contribution": -0.05
+  }
+}
