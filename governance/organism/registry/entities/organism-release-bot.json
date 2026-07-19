@@ -27,12 +27,12 @@
   "workflow": ".github/workflows/release.yml",
   "report": "docs/release-report.md",
   "microbots": [],
-  "fitness_score": 0.542,
-  "fitness_evaluated": "2026-07-18T21:50:25.439Z",
+  "fitness_score": 0.573,
+  "fitness_evaluated": "2026-07-19T01:19:19.639Z",
   "capability_weights": {
-    "build": 1.214,
-    "release": 1.214,
-    "publish": 1.214,
-    "create_gh_release": 1.214
+    "build": 1.241,
+    "release": 1.241,
+    "publish": 1.241,
+    "create_gh_release": 1.241
   }
 }
