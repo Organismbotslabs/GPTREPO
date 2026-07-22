@@ -27,7 +27,7 @@
   "fitness_score": 0.561,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-07-22T19:16:07.652Z",
+  "fitness_evaluated": "2026-07-22T22:03:29.014Z",
   "capability_weights": {
     "issue_create": 1.22,
     "issue_route": 1.22,
