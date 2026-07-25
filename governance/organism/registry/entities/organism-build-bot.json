@@ -24,7 +24,7 @@
   "report": "docs/build-report.md",
   "microbots": [],
   "fitness_score": 0.558,
-  "fitness_evaluated": "2026-07-25T02:30:12.933Z",
+  "fitness_evaluated": "2026-07-25T05:42:41.110Z",
   "capability_weights": {
     "build": 1.2,
     "package": 1.2,
