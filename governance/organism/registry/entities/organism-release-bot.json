@@ -28,7 +28,7 @@
   "report": "docs/release-report.md",
   "microbots": [],
   "fitness_score": 0.567,
-  "fitness_evaluated": "2026-07-26T10:44:31.850Z",
+  "fitness_evaluated": "2026-07-26T13:17:23.819Z",
   "capability_weights": {
     "build": 1.28,
     "release": 1.28,
