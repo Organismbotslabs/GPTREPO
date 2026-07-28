@@ -3,185 +3,185 @@
   "version": "1.0.0",
   "status": "active",
   "started": "2026-05-24T08:00:00.000Z",
-  "lastPulse": "2026-07-28T07:17:25.967Z",
-  "lastUpdated": "2026-07-28T07:17:25.968Z",
-  "pulseCount": 749,
+  "lastPulse": "2026-07-28T08:32:13.009Z",
+  "lastUpdated": "2026-07-28T08:32:13.013Z",
+  "pulseCount": 750,
   "cycleCount": 42,
   "health": {
     "score": 1,
     "status": "green",
-    "lastCheck": "2026-07-28T07:17:25.968Z"
+    "lastCheck": "2026-07-28T08:32:13.013Z"
   },
   "agents": {
     "geometry-lock": {
       "id": "atlas://protocol/geometry-lock",
       "status": "active",
-      "fitness": 0.622,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.621,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-alpha-bot": {
       "id": "atlas://bot/organism-alpha-bot",
       "status": "active",
-      "fitness": 0.576,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.613,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-build-bot": {
       "id": "atlas://bot/organism-build-bot",
       "status": "active",
-      "fitness": 0.569,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.55,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-cloud-bot": {
       "id": "atlas://bot/organism-cloud-bot",
       "status": "active",
-      "fitness": 0.597,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.554,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-commit-bot": {
       "id": "atlas://bot/organism-commit-bot",
       "status": "active",
-      "fitness": 0.607,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.619,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-coordinator-bot": {
       "id": "atlas://bot/organism-coordinator-bot",
       "status": "active",
-      "fitness": 0.595,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.596,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-crawler-bot": {
       "id": "atlas://bot/organism-crawler-bot",
       "status": "active",
-      "fitness": 0.584,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.598,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-cyber-bot": {
       "id": "atlas://bot/organism-cyber-bot",
       "status": "active",
-      "fitness": 0.637,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.617,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-deploy-bot": {
       "id": "atlas://bot/organism-deploy-bot",
       "status": "active",
-      "fitness": 0.536,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.559,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-deps-bot": {
       "id": "atlas://bot/organism-deps-bot",
       "status": "active",
-      "fitness": 0.585,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.582,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-docs-bot": {
       "id": "atlas://bot/organism-docs-bot",
       "status": "active",
-      "fitness": 0.565,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.556,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-economy-bot": {
       "id": "atlas://bot/organism-economy-bot",
       "status": "active",
-      "fitness": 0.592,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.579,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-evolution-bot": {
       "id": "atlas://bot/organism-evolution-bot",
       "status": "active",
-      "fitness": 0.589,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.598,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-genesis-bot": {
       "id": "atlas://bot/organism-genesis-bot",
       "status": "active",
-      "fitness": 0.571,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.582,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-governance-bot": {
       "id": "atlas://bot/organism-governance-bot",
       "status": "active",
-      "fitness": 0.612,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.606,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-intel-bot": {
       "id": "atlas://bot/organism-intel-bot",
       "status": "active",
-      "fitness": 0.587,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.596,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-issue-bot": {
       "id": "atlas://bot/organism-issue-bot",
       "status": "active",
-      "fitness": 0.558,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.567,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-learning-bot": {
       "id": "atlas://bot/organism-learning-bot",
       "status": "active",
-      "fitness": 0.564,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.591,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-neural-bot": {
       "id": "atlas://bot/organism-neural-bot",
       "status": "active",
-      "fitness": 0.561,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.563,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-protocol-bot": {
       "id": "atlas://bot/organism-protocol-bot",
       "status": "active",
-      "fitness": 0.609,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.576,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-release-bot": {
       "id": "atlas://bot/organism-release-bot",
       "status": "active",
-      "fitness": 0.612,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.571,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-runtime-bot": {
       "id": "atlas://bot/organism-runtime-bot",
       "status": "active",
-      "fitness": 0.524,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.543,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-sandcastle-bot": {
       "id": "atlas://bot/organism-sandcastle-bot",
       "status": "active",
-      "fitness": 0.587,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.58,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-sdk-bot": {
       "id": "atlas://bot/organism-sdk-bot",
       "status": "active",
-      "fitness": 0.56,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.577,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-sentinel-bot": {
       "id": "atlas://bot/organism-sentinel-bot",
       "status": "active",
-      "fitness": 0.586,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.564,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-test-bot": {
       "id": "atlas://bot/organism-test-bot",
       "status": "active",
-      "fitness": 0.567,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.537,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     },
     "organism-visual-bot": {
       "id": "atlas://bot/organism-visual-bot",
       "status": "active",
-      "fitness": 0.567,
-      "lastSeen": "2026-07-28T07:17:25.968Z"
+      "fitness": 0.551,
+      "lastSeen": "2026-07-28T08:32:13.011Z"
     }
   },
   "taskQueue": [],
   "metrics": {
-    "tasksProcessed": 50,
-    "tasksSuccess": 49,
+    "tasksProcessed": 51,
+    "tasksSuccess": 50,
     "tasksFailed": 1,
-    "avgPulseTime": 1.6253645100965577
+    "avgPulseTime": 2.5323945563479153
   },
   "experiment": {
     "name": "Divergence Experiment",
