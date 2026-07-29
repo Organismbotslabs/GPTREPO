@@ -23,8 +23,8 @@
   "workflow": ".github/workflows/organism-sdk-bot.yml",
   "report": "docs/sdk-report.md",
   "microbots": [],
-  "fitness_score": 0.574,
-  "fitness_evaluated": "2026-07-29T19:14:10.189Z",
+  "fitness_score": 0.549,
+  "fitness_evaluated": "2026-07-29T22:00:00.328Z",
   "capability_weights": {
     "validate": 1.252,
     "package": 1.252,
