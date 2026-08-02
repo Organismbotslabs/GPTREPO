@@ -23,14 +23,14 @@
   "workflow": ".github/workflows/organism-genesis-bot.yml",
   "report": "docs/genesis-report.md",
   "generation": 1,
-  "fitness_score": 0.596,
+  "fitness_score": 0.586,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-08-01T21:54:39.393Z",
+  "fitness_evaluated": "2026-08-02T01:24:40.946Z",
   "capability_weights": {
-    "spawn_agent": 1.271,
-    "register": 1.271,
-    "generate_workflow": 1.271,
-    "lineage_track": 1.271
+    "spawn_agent": 1.303,
+    "register": 1.303,
+    "generate_workflow": 1.303,
+    "lineage_track": 1.303
   }
 }
