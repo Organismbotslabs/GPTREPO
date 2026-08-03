@@ -24,7 +24,7 @@
   "report": "docs/sdk-report.md",
   "microbots": [],
   "fitness_score": 0.557,
-  "fitness_evaluated": "2026-08-03T02:37:45.893Z",
+  "fitness_evaluated": "2026-08-03T06:21:49.060Z",
   "capability_weights": {
     "validate": 1.284,
     "package": 1.284,
