@@ -24,14 +24,14 @@
   "workflow": ".github/workflows/organism-issue-bot.yml",
   "report": "docs/issue-report.md",
   "generation": 1,
-  "fitness_score": 0.585,
+  "fitness_score": 0.594,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-08-08T21:27:41.125Z",
+  "fitness_evaluated": "2026-08-09T00:42:50.484Z",
   "capability_weights": {
-    "issue_create": 1.281,
-    "issue_route": 1.281,
-    "issue_track": 1.281,
-    "report": 1.281
+    "issue_create": 1.316,
+    "issue_route": 1.316,
+    "issue_track": 1.316,
+    "report": 1.316
   }
 }
