@@ -24,8 +24,8 @@
   "workflow": ".github/workflows/organism-visual-bot.yml",
   "report": "docs/visual-regression-report.md",
   "microbots": [],
-  "fitness_score": 0.546,
-  "fitness_evaluated": "2026-08-10T10:14:39.325Z",
+  "fitness_score": 0.583,
+  "fitness_evaluated": "2026-08-10T13:02:38.942Z",
   "capability_weights": {
     "screenshot": 1.281,
     "visual_diff": 1.281,
