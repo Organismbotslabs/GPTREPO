@@ -1,9 +1,9 @@
 {
-  "pulse_count": 954,
-  "rhythm": "normal",
+  "pulse_count": 955,
+  "rhythm": "bradycardia",
   "bpm": 4,
-  "last_beat": "2026-08-16T17:58:43Z",
-  "health": 0.873,
+  "last_beat": "2026-08-16T18:36:16Z",
+  "health": 0.618,
   "phi_alignment": 0.618,
   "phi_rhythm_ms": 873
 }
