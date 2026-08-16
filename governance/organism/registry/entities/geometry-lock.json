@@ -61,19 +61,19 @@
   "sdk": "sdk/geometry-lock/",
   "report": "docs/geometry-lock-report.md",
   "microbots": [],
-  "fitness_score": 0.642,
-  "fitness_evaluated": "2026-08-15T21:18:49.024Z",
+  "fitness_score": 0.652,
+  "fitness_evaluated": "2026-08-16T00:30:21.558Z",
   "capability_weights": {
-    "geometric_key_generation": 1.598,
-    "phase_resonance_validation": 1.598,
-    "machine_token_generation": 1.598,
-    "machine_token_validation": 1.598,
-    "intelligence_interface": 1.598,
-    "machine_interface": 1.598,
-    "caller_registration": 1.598,
-    "key_revocation": 1.598,
-    "nova_bridge": 1.598,
-    "medina_calls_gating": 1.598,
-    "interface_type_enforcement": 1.598
+    "geometric_key_generation": 1.618,
+    "phase_resonance_validation": 1.618,
+    "machine_token_generation": 1.618,
+    "machine_token_validation": 1.618,
+    "intelligence_interface": 1.618,
+    "machine_interface": 1.618,
+    "caller_registration": 1.618,
+    "key_revocation": 1.618,
+    "nova_bridge": 1.618,
+    "medina_calls_gating": 1.618,
+    "interface_type_enforcement": 1.618
   }
 }
