@@ -1,0 +1,12 @@
+{
+  "type": "workflow_observation",
+  "workflow": "🧬 Evolution Bot",
+  "conclusion": "failure",
+  "run_id": "32238032719",
+  "timestamp": "2026-08-19T09:31:55Z",
+  "success": false,
+  "insights": {
+    "pattern": "workflow_failure",
+    "fitness_contribution": -0.05
+  }
+}
