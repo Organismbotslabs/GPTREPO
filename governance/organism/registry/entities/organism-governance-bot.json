@@ -40,8 +40,8 @@
   "meta_report": "docs/governance-meta-report.md",
   "audit_log": "dist/governance/audit-log.jsonl",
   "microbots": [],
-  "fitness_score": 0.615,
-  "fitness_evaluated": "2026-08-20T15:31:20.947Z",
+  "fitness_score": 0.639,
+  "fitness_evaluated": "2026-08-20T18:35:44.276Z",
   "capability_weights": {
     "apply_cpl_l": 1.467,
     "run_cpl_p": 1.467,
