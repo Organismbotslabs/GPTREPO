@@ -25,8 +25,8 @@
   "workflow": ".github/workflows/organism-sandcastle-bot.yml",
   "report": "docs/sandcastle-report.md",
   "microbots": [],
-  "fitness_score": 0.577,
-  "fitness_evaluated": "2026-08-23T01:11:33.516Z",
+  "fitness_score": 0.589,
+  "fitness_evaluated": "2026-08-23T03:48:31.791Z",
   "capability_weights": {
     "build": 1.367,
     "test": 1.367,
