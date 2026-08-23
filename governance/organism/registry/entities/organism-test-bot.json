@@ -24,10 +24,10 @@
   "report": "docs/test-health-dashboard.md",
   "microbots": [],
   "fitness_score": 0.536,
-  "fitness_evaluated": "2026-08-22T21:19:10.280Z",
+  "fitness_evaluated": "2026-08-23T00:31:55.043Z",
   "capability_weights": {
-    "test": 1.27,
-    "report": 1.27,
-    "matrix_run": 1.27
+    "test": 1.283,
+    "report": 1.283,
+    "matrix_run": 1.283
   }
 }
