@@ -1,0 +1,12 @@
+{
+  "scan_number": 508,
+  "timestamp": "2026-08-25T20:24:58Z",
+  "type": "heartbeat",
+  "results": {
+    "integrity_check": false,
+    "dangerous_patterns": 1,
+    "threats_detected": 1,
+    "health_score": 0.873
+  },
+  "shield_status": "active"
+}
