@@ -25,7 +25,7 @@
   "report": "docs/visual-regression-report.md",
   "microbots": [],
   "fitness_score": 0.582,
-  "fitness_evaluated": "2026-08-26T09:38:07.955Z",
+  "fitness_evaluated": "2026-08-26T12:47:14.428Z",
   "capability_weights": {
     "screenshot": 1.316,
     "visual_diff": 1.316,
