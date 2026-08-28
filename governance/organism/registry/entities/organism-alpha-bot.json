@@ -25,8 +25,8 @@
   "workflow": ".github/workflows/organism-alpha-bot.yml",
   "report": "docs/fleet-report.md",
   "microbots": [],
-  "fitness_score": 0.619,
-  "fitness_evaluated": "2026-08-27T13:46:38.255Z",
+  "fitness_score": 0.591,
+  "fitness_evaluated": "2026-08-28T00:14:14.147Z",
   "capability_weights": {
     "orchestrate": 1.468,
     "census": 1.468,
