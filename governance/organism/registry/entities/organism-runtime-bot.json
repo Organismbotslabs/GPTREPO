@@ -35,8 +35,8 @@
     "agent-vitals",
     "contract-watcher"
   ],
-  "fitness_score": 0.592,
-  "fitness_evaluated": "2026-08-29T18:15:29.079Z",
+  "fitness_score": 0.578,
+  "fitness_evaluated": "2026-08-29T22:59:28.054Z",
   "capability_weights": {
     "runtime_probe": 1.377,
     "contract_validate": 1.377,
