@@ -40,15 +40,15 @@
   "meta_report": "docs/governance-meta-report.md",
   "audit_log": "dist/governance/audit-log.jsonl",
   "microbots": [],
-  "fitness_score": 0.562,
-  "fitness_evaluated": "2026-08-29T22:59:28.053Z",
+  "fitness_score": 0.599,
+  "fitness_evaluated": "2026-08-30T01:58:00.465Z",
   "capability_weights": {
-    "apply_cpl_l": 1.497,
-    "run_cpl_p": 1.497,
-    "audit_trail": 1.497,
-    "meta_analysis": 1.497,
-    "escalation_routing": 1.497,
-    "feedback_intake": 1.497,
-    "governance_report": 1.497
+    "apply_cpl_l": 1.534,
+    "run_cpl_p": 1.534,
+    "audit_trail": 1.534,
+    "meta_analysis": 1.534,
+    "escalation_routing": 1.534,
+    "feedback_intake": 1.534,
+    "governance_report": 1.534
   }
 }
