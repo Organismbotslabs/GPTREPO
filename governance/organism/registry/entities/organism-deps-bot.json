@@ -25,7 +25,7 @@
   "report": "docs/dependency-freshness-report.md",
   "microbots": [],
   "fitness_score": 0.556,
-  "fitness_evaluated": "2026-08-30T16:02:54.397Z",
+  "fitness_evaluated": "2026-08-30T20:34:03.633Z",
   "capability_weights": {
     "dep_scan": 1.398,
     "staleness_check": 1.398,
