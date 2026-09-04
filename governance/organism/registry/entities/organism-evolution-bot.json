@@ -25,10 +25,10 @@
   "workflow": ".github/workflows/organism-evolution-bot.yml",
   "report": "docs/evolution-report.md",
   "generation": 1,
-  "fitness_score": 0.615,
+  "fitness_score": 0.56,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-09-04T18:05:35.813Z",
+  "fitness_evaluated": "2026-09-04T22:46:39.928Z",
   "capability_weights": {
     "evaluate": 1.493,
     "hebbian_update": 1.493,
