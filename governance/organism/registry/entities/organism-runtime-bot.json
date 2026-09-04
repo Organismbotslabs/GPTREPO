@@ -36,7 +36,7 @@
     "contract-watcher"
   ],
   "fitness_score": 0.594,
-  "fitness_evaluated": "2026-09-04T02:56:24.304Z",
+  "fitness_evaluated": "2026-09-04T07:45:21.757Z",
   "capability_weights": {
     "runtime_probe": 1.412,
     "contract_validate": 1.412,
