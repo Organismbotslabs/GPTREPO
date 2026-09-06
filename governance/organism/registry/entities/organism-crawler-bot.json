@@ -32,13 +32,13 @@
     "link-checker",
     "graph-builder"
   ],
-  "fitness_score": 0.638,
-  "fitness_evaluated": "2026-09-05T22:38:38.404Z",
+  "fitness_score": 0.614,
+  "fitness_evaluated": "2026-09-06T01:31:54.878Z",
   "capability_weights": {
-    "map": 1.463,
-    "orphan_detect": 1.463,
-    "dead_link_detect": 1.463,
-    "dep_graph": 1.463,
-    "dashboard": 1.463
+    "map": 1.505,
+    "orphan_detect": 1.505,
+    "dead_link_detect": 1.505,
+    "dep_graph": 1.505,
+    "dashboard": 1.505
   }
 }

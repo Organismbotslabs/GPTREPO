@@ -29,12 +29,12 @@
     "report-aggregator",
     "pattern-detector"
   ],
-  "fitness_score": 0.562,
-  "fitness_evaluated": "2026-09-05T22:38:38.406Z",
+  "fitness_score": 0.59,
+  "fitness_evaluated": "2026-09-06T01:31:54.880Z",
   "capability_weights": {
-    "aggregate_reports": 1.377,
-    "pattern_detect": 1.377,
-    "awareness_build": 1.377,
-    "fleet_picture": 1.377
+    "aggregate_reports": 1.41,
+    "pattern_detect": 1.41,
+    "awareness_build": 1.41,
+    "fleet_picture": 1.41
   }
 }
