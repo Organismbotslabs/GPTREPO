@@ -29,8 +29,8 @@
     "report-aggregator",
     "pattern-detector"
   ],
-  "fitness_score": 0.573,
-  "fitness_evaluated": "2026-09-06T22:41:24.122Z",
+  "fitness_score": 0.554,
+  "fitness_evaluated": "2026-09-07T02:54:52.616Z",
   "capability_weights": {
     "aggregate_reports": 1.41,
     "pattern_detect": 1.41,
