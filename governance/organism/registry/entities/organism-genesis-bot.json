@@ -26,7 +26,7 @@
   "fitness_score": 0.578,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-09-10T15:50:20.647Z",
+  "fitness_evaluated": "2026-09-10T20:25:40.580Z",
   "capability_weights": {
     "spawn_agent": 1.478,
     "register": 1.478,
