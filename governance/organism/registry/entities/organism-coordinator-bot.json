@@ -24,10 +24,10 @@
   "workflow": ".github/workflows/organism-coordinator-bot.yml",
   "report": "docs/coordination-report.md",
   "generation": 1,
-  "fitness_score": 0.579,
+  "fitness_score": 0.547,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-09-11T10:37:08.604Z",
+  "fitness_evaluated": "2026-09-11T15:52:29.300Z",
   "capability_weights": {
     "coordinate": 1.433,
     "match": 1.433,
