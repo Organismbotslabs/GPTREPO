@@ -2,7 +2,7 @@
   "id": "divergence://metrics/current",
   "version": "1.0.0",
   "initialized": "2026-05-24T06:00:00.000Z",
-  "lastUpdated": "2026-09-13T21:22:03.040Z",
+  "lastUpdated": "2026-09-13T23:20:05.208Z",
   "experiment": {
     "name": "Long-term Autonomous Divergence",
     "started": "2026-05-24T06:00:00.000Z",
@@ -40,7 +40,7 @@
     "totalAgents": 27,
     "activeAgents": 27,
     "maxGeneration": 1,
-    "averageFitness": 0.578,
+    "averageFitness": 0.576,
     "healthStatus": "green"
   },
   "phiMetrics": {
