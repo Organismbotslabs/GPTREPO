@@ -27,7 +27,7 @@
   "report": "docs/deploy-report.md",
   "microbots": [],
   "fitness_score": 0.544,
-  "fitness_evaluated": "2026-09-13T03:11:02.161Z",
+  "fitness_evaluated": "2026-09-13T11:05:55.967Z",
   "capability_weights": {
     "deploy_icp": 1.402,
     "deploy_pages": 1.402,
