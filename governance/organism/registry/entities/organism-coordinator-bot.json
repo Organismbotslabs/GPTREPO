@@ -24,14 +24,14 @@
   "workflow": ".github/workflows/organism-coordinator-bot.yml",
   "report": "docs/coordination-report.md",
   "generation": 1,
-  "fitness_score": 0.566,
+  "fitness_score": 0.583,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-09-12T22:50:20.503Z",
+  "fitness_evaluated": "2026-09-13T01:38:38.582Z",
   "capability_weights": {
-    "coordinate": 1.433,
-    "match": 1.433,
-    "deadlock_detect": 1.433,
-    "marketplace": 1.433
+    "coordinate": 1.464,
+    "match": 1.464,
+    "deadlock_detect": 1.464,
+    "marketplace": 1.464
   }
 }
