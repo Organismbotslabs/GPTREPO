@@ -37,8 +37,8 @@
     "synapse-trainer",
     "weight-evolver"
   ],
-  "fitness_score": 0.56,
-  "fitness_evaluated": "2026-09-16T16:08:25.252Z",
+  "fitness_score": 0.568,
+  "fitness_evaluated": "2026-09-16T20:52:46.558Z",
   "capability_weights": {
     "gather_signals": 1.513,
     "train_synapses": 1.513,
