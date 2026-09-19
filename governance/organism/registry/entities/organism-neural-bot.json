@@ -25,7 +25,7 @@
   "report": "docs/neural-graph-report.md",
   "microbots": [],
   "fitness_score": 0.578,
-  "fitness_evaluated": "2026-09-19T03:09:24.732Z",
+  "fitness_evaluated": "2026-09-19T10:19:46.331Z",
   "capability_weights": {
     "validate": 1.405,
     "graph": 1.405,
