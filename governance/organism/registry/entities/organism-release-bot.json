@@ -27,8 +27,8 @@
   "workflow": ".github/workflows/release.yml",
   "report": "docs/release-report.md",
   "microbots": [],
-  "fitness_score": 0.596,
-  "fitness_evaluated": "2026-09-19T20:02:57.133Z",
+  "fitness_score": 0.562,
+  "fitness_evaluated": "2026-09-19T22:39:49.448Z",
   "capability_weights": {
     "build": 1.474,
     "release": 1.474,
