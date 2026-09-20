@@ -24,11 +24,11 @@
   "workflow": ".github/workflows/organism-deps-bot.yml",
   "report": "docs/dependency-freshness-report.md",
   "microbots": [],
-  "fitness_score": 0.553,
-  "fitness_evaluated": "2026-09-19T22:39:49.445Z",
+  "fitness_score": 0.54,
+  "fitness_evaluated": "2026-09-20T01:55:41.392Z",
   "capability_weights": {
-    "dep_scan": 1.455,
-    "staleness_check": 1.455,
-    "vulnerability_report": 1.455
+    "dep_scan": 1.47,
+    "staleness_check": 1.47,
+    "vulnerability_report": 1.47
   }
 }
