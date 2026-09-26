@@ -29,8 +29,8 @@
   "workflow": ".github/workflows/organism-sentinel-bot.yml",
   "report": "docs/security-report.md",
   "microbots": [],
-  "fitness_score": 0.557,
-  "fitness_evaluated": "2026-09-26T03:33:04.106Z",
+  "fitness_score": 0.594,
+  "fitness_evaluated": "2026-09-26T10:49:35.656Z",
   "capability_weights": {
     "security_audit": 1.532,
     "csp_check": 1.532,
