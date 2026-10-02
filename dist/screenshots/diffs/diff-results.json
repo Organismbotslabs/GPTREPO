@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-01T10:44:45.491Z",
+  "timestamp": "2026-10-02T10:19:53.556Z",
   "total": 294,
-  "changed": 15,
+  "changed": 14,
   "new": 0,
   "missing": 0,
   "details": [
@@ -1125,10 +1125,8 @@
     },
     {
       "file": "ext-signal-relay-adapter-popup-desktop.png",
-      "status": "changed",
-      "message": "Size delta: +12 bytes",
-      "baselineSize": 38306,
-      "currentSize": 38318
+      "status": "unchanged",
+      "message": "Pixel-perfect match"
     },
     {
       "file": "ext-signal-relay-adapter-popup-mobile.png",
@@ -1137,10 +1135,8 @@
     },
     {
       "file": "ext-signal-relay-adapter-popup-tablet.png",
-      "status": "changed",
-      "message": "Size delta: +9 bytes",
-      "baselineSize": 34230,
-      "currentSize": 34239
+      "status": "unchanged",
+      "message": "Pixel-perfect match"
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-desktop.png",
@@ -1149,8 +1145,10 @@
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-mobile.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: -8 bytes",
+      "baselineSize": 38749,
+      "currentSize": 38741
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-tablet.png",
@@ -1482,23 +1480,23 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: +88 bytes",
+      "message": "Size delta: -42 bytes",
       "baselineSize": 905171,
-      "currentSize": 905259
+      "currentSize": 905129
     },
     {
       "file": "index-mobile.png",
       "status": "changed",
-      "message": "Size delta: +93 bytes",
+      "message": "Size delta: +7 bytes",
       "baselineSize": 948412,
-      "currentSize": 948505
+      "currentSize": 948419
     },
     {
       "file": "index-tablet.png",
       "status": "changed",
-      "message": "Size delta: +58 bytes",
+      "message": "Size delta: -8 bytes",
       "baselineSize": 909810,
-      "currentSize": 909868
+      "currentSize": 909802
     },
     {
       "file": "index.png",
