@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07T10:52:12.835Z",
+  "timestamp": "2026-10-08T11:09:42.354Z",
   "total": 294,
   "changed": 16,
   "new": 0,
@@ -441,9 +441,9 @@
     {
       "file": "ext-edge-prompt-lab-sidepanel-mobile.png",
       "status": "changed",
-      "message": "Size delta: +6 bytes",
+      "message": "Size delta: +4 bytes",
       "baselineSize": 30176,
-      "currentSize": 30182
+      "currentSize": 30180
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-tablet.png",
@@ -1137,10 +1137,8 @@
     },
     {
       "file": "ext-signal-relay-adapter-popup-tablet.png",
-      "status": "changed",
-      "message": "Size delta: +9 bytes",
-      "baselineSize": 34230,
-      "currentSize": 34239
+      "status": "unchanged",
+      "message": "Pixel-perfect match"
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-desktop.png",
@@ -1158,8 +1156,10 @@
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-tablet.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: -12 bytes",
+      "baselineSize": 54073,
+      "currentSize": 54061
     },
     {
       "file": "ext-social-cortex-popup-desktop.png",
@@ -1484,9 +1484,9 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: -42 bytes",
+      "message": "Size delta: +36 bytes",
       "baselineSize": 905171,
-      "currentSize": 905129
+      "currentSize": 905207
     },
     {
       "file": "index-mobile.png",
