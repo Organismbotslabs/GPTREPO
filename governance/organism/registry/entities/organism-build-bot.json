@@ -23,8 +23,8 @@
   "workflow": ".github/workflows/build-extensions.yml",
   "report": "docs/build-report.md",
   "microbots": [],
-  "fitness_score": 0.58,
-  "fitness_evaluated": "2026-10-09T00:58:24.995Z",
+  "fitness_score": 0.577,
+  "fitness_evaluated": "2026-10-09T10:03:06.552Z",
   "capability_weights": {
     "build": 1.479,
     "package": 1.479,
