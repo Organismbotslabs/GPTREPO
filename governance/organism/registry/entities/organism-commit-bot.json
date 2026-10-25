@@ -26,7 +26,7 @@
   "fitness_score": 0.588,
   "created_at": "2026-05-24T06:00:00.000Z",
   "created_by": "atlas://human/operator",
-  "fitness_evaluated": "2026-10-25T15:33:34.995Z",
+  "fitness_evaluated": "2026-10-25T20:22:54.614Z",
   "capability_weights": {
     "commit": 1.618,
     "classify": 1.618,
