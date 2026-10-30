@@ -29,7 +29,7 @@
   "report": "docs/economy-dashboard.md",
   "microbots": [],
   "fitness_score": 0.598,
-  "fitness_evaluated": "2026-10-30T09:36:17.583Z",
+  "fitness_evaluated": "2026-10-30T17:56:43.332Z",
   "capability_weights": {
     "marketplace_analytics": 1.561,
     "sdk_tracking": 1.561,
