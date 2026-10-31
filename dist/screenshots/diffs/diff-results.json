@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-30T10:43:52.053Z",
+  "timestamp": "2026-10-31T10:12:16.742Z",
   "total": 294,
   "changed": 16,
   "new": 0,
@@ -441,9 +441,9 @@
     {
       "file": "ext-edge-prompt-lab-sidepanel-mobile.png",
       "status": "changed",
-      "message": "Size delta: +6 bytes",
+      "message": "Size delta: +4 bytes",
       "baselineSize": 30176,
-      "currentSize": 30182
+      "currentSize": 30180
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-tablet.png",
@@ -1125,10 +1125,8 @@
     },
     {
       "file": "ext-signal-relay-adapter-popup-desktop.png",
-      "status": "changed",
-      "message": "Size delta: +12 bytes",
-      "baselineSize": 38306,
-      "currentSize": 38318
+      "status": "unchanged",
+      "message": "Pixel-perfect match"
     },
     {
       "file": "ext-signal-relay-adapter-popup-mobile.png",
@@ -1137,8 +1135,10 @@
     },
     {
       "file": "ext-signal-relay-adapter-popup-tablet.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: +9 bytes",
+      "baselineSize": 34230,
+      "currentSize": 34239
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-desktop.png",
@@ -1484,23 +1484,23 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: +49 bytes",
+      "message": "Size delta: +16 bytes",
       "baselineSize": 905171,
-      "currentSize": 905220
+      "currentSize": 905187
     },
     {
       "file": "index-mobile.png",
       "status": "changed",
-      "message": "Size delta: -7 bytes",
+      "message": "Size delta: -75 bytes",
       "baselineSize": 948412,
-      "currentSize": 948405
+      "currentSize": 948337
     },
     {
       "file": "index-tablet.png",
       "status": "changed",
-      "message": "Size delta: +78 bytes",
+      "message": "Size delta: -11 bytes",
       "baselineSize": 909810,
-      "currentSize": 909888
+      "currentSize": 909799
     },
     {
       "file": "index.png",
