@@ -26,11 +26,11 @@
   "workflow": ".github/workflows/deploy-icp.yml",
   "report": "docs/deploy-report.md",
   "microbots": [],
-  "fitness_score": 0.575,
-  "fitness_evaluated": "2026-11-01T00:00:01.192Z",
+  "fitness_score": 0.556,
+  "fitness_evaluated": "2026-11-01T02:49:43.129Z",
   "capability_weights": {
-    "deploy_icp": 1.544,
-    "deploy_pages": 1.544,
-    "canister_manage": 1.544
+    "deploy_icp": 1.565,
+    "deploy_pages": 1.565,
+    "canister_manage": 1.565
   }
 }
