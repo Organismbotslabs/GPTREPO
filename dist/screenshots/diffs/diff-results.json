@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-31T10:12:16.742Z",
+  "timestamp": "2026-11-01T11:02:34.248Z",
   "total": 294,
   "changed": 16,
   "new": 0,
@@ -441,16 +441,16 @@
     {
       "file": "ext-edge-prompt-lab-sidepanel-mobile.png",
       "status": "changed",
-      "message": "Size delta: +4 bytes",
+      "message": "Size delta: +6 bytes",
       "baselineSize": 30176,
-      "currentSize": 30180
+      "currentSize": 30182
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-tablet.png",
       "status": "changed",
-      "message": "Size delta: +4 bytes",
+      "message": "Size delta: +6 bytes",
       "baselineSize": 39996,
-      "currentSize": 40000
+      "currentSize": 40002
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel.png",
@@ -1484,23 +1484,23 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: +16 bytes",
+      "message": "Size delta: -82 bytes",
       "baselineSize": 905171,
-      "currentSize": 905187
+      "currentSize": 905089
     },
     {
       "file": "index-mobile.png",
       "status": "changed",
-      "message": "Size delta: -75 bytes",
+      "message": "Size delta: -91 bytes",
       "baselineSize": 948412,
-      "currentSize": 948337
+      "currentSize": 948321
     },
     {
       "file": "index-tablet.png",
       "status": "changed",
-      "message": "Size delta: -11 bytes",
+      "message": "Size delta: +56 bytes",
       "baselineSize": 909810,
-      "currentSize": 909799
+      "currentSize": 909866
     },
     {
       "file": "index.png",
