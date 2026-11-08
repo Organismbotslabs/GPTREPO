@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-07T10:53:36.220Z",
+  "timestamp": "2026-11-08T11:03:00.009Z",
   "total": 294,
-  "changed": 18,
+  "changed": 20,
   "new": 0,
   "missing": 0,
   "details": [
@@ -447,9 +447,9 @@
     {
       "file": "ext-edge-prompt-lab-sidepanel-mobile.png",
       "status": "changed",
-      "message": "Size delta: +6 bytes",
+      "message": "Size delta: +4 bytes",
       "baselineSize": 30176,
-      "currentSize": 30182
+      "currentSize": 30180
     },
     {
       "file": "ext-edge-prompt-lab-sidepanel-tablet.png",
@@ -1138,20 +1138,22 @@
     },
     {
       "file": "ext-signal-relay-adapter-popup-mobile.png",
-      "status": "changed",
-      "message": "Size delta: -6 bytes",
-      "baselineSize": 30217,
-      "currentSize": 30211
+      "status": "unchanged",
+      "message": "Pixel-perfect match"
     },
     {
       "file": "ext-signal-relay-adapter-popup-tablet.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: +9 bytes",
+      "baselineSize": 34230,
+      "currentSize": 34239
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-desktop.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: -3 bytes",
+      "baselineSize": 81335,
+      "currentSize": 81332
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-mobile.png",
@@ -1162,8 +1164,10 @@
     },
     {
       "file": "ext-signal-relay-adapter-sidepanel-tablet.png",
-      "status": "unchanged",
-      "message": "Pixel-perfect match"
+      "status": "changed",
+      "message": "Size delta: -12 bytes",
+      "baselineSize": 54073,
+      "currentSize": 54061
     },
     {
       "file": "ext-social-cortex-popup-desktop.png",
@@ -1488,23 +1492,23 @@
     {
       "file": "index-desktop.png",
       "status": "changed",
-      "message": "Size delta: +558 bytes",
+      "message": "Size delta: +673 bytes",
       "baselineSize": 905171,
-      "currentSize": 905729
+      "currentSize": 905844
     },
     {
       "file": "index-mobile.png",
       "status": "changed",
-      "message": "Size delta: +720 bytes",
+      "message": "Size delta: +884 bytes",
       "baselineSize": 948412,
-      "currentSize": 949132
+      "currentSize": 949296
     },
     {
       "file": "index-tablet.png",
       "status": "changed",
-      "message": "Size delta: +1226 bytes",
+      "message": "Size delta: +1224 bytes",
       "baselineSize": 909810,
-      "currentSize": 911036
+      "currentSize": 911034
     },
     {
       "file": "index.png",
