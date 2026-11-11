@@ -32,8 +32,8 @@
     "link-checker",
     "graph-builder"
   ],
-  "fitness_score": 0.557,
-  "fitness_evaluated": "2026-11-11T04:44:02.080Z",
+  "fitness_score": 0.607,
+  "fitness_evaluated": "2026-11-11T13:33:40.275Z",
   "capability_weights": {
     "map": 1.618,
     "orphan_detect": 1.618,
