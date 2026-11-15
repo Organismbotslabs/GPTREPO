@@ -23,8 +23,8 @@
   "workflow": ".github/workflows/organism-test-bot.yml",
   "report": "docs/test-health-dashboard.md",
   "microbots": [],
-  "fitness_score": 0.588,
-  "fitness_evaluated": "2026-11-14T19:41:51.243Z",
+  "fitness_score": 0.585,
+  "fitness_evaluated": "2026-11-15T00:45:31.847Z",
   "capability_weights": {
     "test": 1.573,
     "report": 1.573,
