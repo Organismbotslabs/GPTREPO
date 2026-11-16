@@ -24,8 +24,8 @@
   "workflow": ".github/workflows/organism-protocol-bot.yml",
   "report": "docs/protocol-lint-report.md",
   "microbots": [],
-  "fitness_score": 0.536,
-  "fitness_evaluated": "2026-11-15T18:28:58.807Z",
+  "fitness_score": 0.541,
+  "fitness_evaluated": "2026-11-16T00:45:43.049Z",
   "capability_weights": {
     "lint": 1.618,
     "graph": 1.618,
