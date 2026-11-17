@@ -26,8 +26,8 @@
   "workflow": ".github/workflows/deploy-icp.yml",
   "report": "docs/deploy-report.md",
   "microbots": [],
-  "fitness_score": 0.58,
-  "fitness_evaluated": "2026-11-17T06:33:37.781Z",
+  "fitness_score": 0.561,
+  "fitness_evaluated": "2026-11-17T18:08:27.106Z",
   "capability_weights": {
     "deploy_icp": 1.611,
     "deploy_pages": 1.611,
